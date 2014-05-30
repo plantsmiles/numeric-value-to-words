@@ -1,7 +1,7 @@
 numeric-value-to-words
 ======================
 
-Program accepts numbers and converts them to their english word representation. (EX. 2523.04 to Two thousand five hundred twenty-three and 04/100 dollars)
+Program accepts numbers and converts them to their english word representation. (EX. 2523.04 to Two thousand five hundred twenty-three 4/100 dollars) The code has 97% code coverage and accepts both postive and negative numbers up to 9,999,999,999. 
 
 Building the Application
 ------------------------

@@ -17,6 +17,10 @@ public class NumberConverter {
     private static final String[] EXPONENTIAL = {"thousand", "million", "billion"};
 
     public static String convertNumberToWords(final BigDecimal incomingNumber) {
+        if (incomingNumber.signum() == -1) {
+            return "minus " + convertNumberToWords(incomingNumber.abs());
+        }
+
         final int wholeNumber = incomingNumber.intValue();
         final String wholeNumberWords = convertWholeNumberToWords(wholeNumber);
 

@@ -12,6 +12,13 @@ import static org.junit.Assert.assertEquals;
 public class NumberConverterTest {
 
     @Test
+    public void testNegativeNumber() {
+        final BigDecimal number = new BigDecimal("-34.06");
+
+        assertEquals(NumberConverter.convertNumberToWords(number), "minus thirty-four 6/100 dollars");
+    }
+
+    @Test
     public void testZero() {
         final BigDecimal number = new BigDecimal("0");
 
