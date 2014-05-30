@@ -7,6 +7,11 @@ import java.math.BigDecimal;
  */
 public class NumericValueConverterApp {
     public static void main(String[] args) {
+
+        if (args.length == 0) {
+            System.out.println("Please provide at least one valid number to convert");
+        }
+
         for (String numberToConvert : args) {
             try {
                 System.out.println("Converted Value: " + numberToConvert + " => " +

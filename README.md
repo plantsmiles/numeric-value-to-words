@@ -24,3 +24,13 @@ After building the application with gradle run the following command passing spa
 This will produce the output:
 
     Converted Value: 2046.06 => two thousand forty-six 6/100 dollars
+
+You can also supply 1..N arguments as arguments, example as follows:
+
+    java -jar build/libs/NumericValueToWords-1.0.jar 2046.06 58 483.9
+
+Will produce the out output:
+
+    Converted Value: 2046.06 => two thousand forty-six 6/100 dollars
+    Converted Value: 58 => fifty-eight dollars
+    Converted Value: 483.9 => four hundred eighty-three 90/100 dollars
