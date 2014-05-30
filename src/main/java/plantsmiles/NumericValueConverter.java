@@ -7,15 +7,13 @@ import java.math.BigDecimal;
  */
 public class NumericValueConverter {
     public static void main(String[] args) {
-        String[] tst = {"2523.111", "1133", "9494302.006", "cannotConvert"};
-        for (String numberToConvert : tst) {
+        for (String numberToConvert : args) {
             try {
                 System.out.println("Converted Value: " + numberToConvert + " => " +
                         NumberConverter.convertNumberToWords(new BigDecimal(numberToConvert)));
             } catch (NumberFormatException e) {
                 System.out.println("Failed to convert '" + numberToConvert + "' Are you sure its a valid number?");
             }
-
         }
     }
 }
