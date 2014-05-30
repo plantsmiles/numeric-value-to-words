@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * Created by john.samuelson on 5/29/14.
  */
-public class NumericValueConverter {
+public class NumericValueConverterApp {
     public static void main(String[] args) {
         for (String numberToConvert : args) {
             try {
